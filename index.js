@@ -13,6 +13,9 @@ module.exports = function(options) {
   return new module.exports.KademliaNode(options);
 };
 
+/**{@link LevelKademliaStorage} */
+module.exports.LevelKademliaStorage = require('./lib/storage');
+
 /** {@link KademliaNode} */
 module.exports.KademliaNode = require('./lib/node-kademlia');
 
